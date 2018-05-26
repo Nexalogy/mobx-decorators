@@ -1,6 +1,7 @@
 ﻿# MobX decorators plus
  
- This is a forked repo to experiment with adding a few more decorators to the totally amazing work  [farwayer/mobx-decorators](https://github.com/farwayer/mobx-decorators)
+ This is a forked repo to experiment with adding a few more decorators to the totally amazing work  [farwayer/mobx-decorators](https://github.com/farwayer/mobx-decorators) has already accomplished.
+ 
  I'm experimenting with adding
  * `@reaction(tracking:function)` which would be decorator version of reaction() in mobx. i like the class state model. i like grouping actions together, it would make
  * `@session` which is a trivial alteration of @save using sessionStorage. 
