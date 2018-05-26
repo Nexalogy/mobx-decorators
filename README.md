@@ -1,11 +1,14 @@
-﻿# MobX decorators
+﻿# MobX decorators plus
  
  This is a forked repo to experiment with adding a few more decorators to the totally amazing work  [farwayer/mobx-decorators](https://github.com/farwayer/mobx-decorators)
  I'm experimenting with adding
- * *@reaction(reactionTrigger,)* which would be decorator version of reaction() in mobx. i like the class state model. i like grouping actions together, it would be even better to be able to have a list of reactions 
- * @session which is a trivial alteration of @save using sessionStorage
- * *@init* to mark a function as one that when executed initializes reactions
- * *@dispose* to mark a function where reactions and autoruns should be disposed
+ * _@reaction(tracking:function)* which would be decorator version of reaction() in mobx. i like the class state model. i like grouping actions together, it would make
+ * _@session_ which is a trivial alteration of @save using sessionStorage. 
+ * _@init_ to mark a method as one that when executed initializes reactions immediately after
+ * _@dispose_ to mark a method where reactions and autoruns should be disposed
+ * *@save* _modification_ i think would like a property marked by save to be able to have a default value that could be set directly in the class declaration,
+
+# Original ReadMe
 
 _Several helper MobX decorators_
 
