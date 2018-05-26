@@ -7,7 +7,7 @@
  * `@session` which is a trivial alteration of @save using sessionStorage. 
  * `@init` to mark a method as one that when executed initializes reactions immediately after
  * `@dispose` to mark a method where reactions and autoruns should be disposed
- * `@save` _ experimental modifications_ i would like a property marked by save to be able to have a default value that could be set directly in the class declaration,
+ * `@save` _experimental modifications_ i would like a property marked by save to be able to have a default value that could be set directly in the class declaration,
 
 # Original ReadMe
 
