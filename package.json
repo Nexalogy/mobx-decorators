@@ -1,8 +1,8 @@
 {
-  "name": "mobx-decorators",
+  "name": "mobx-decorators-plus",
   "version": "5.0.1",
-  "description": "Several helper MobX decorators (setter, observe, save, ...)",
-  "repository": "farwayer/mobx-decorators",
+  "description": "Several helper MobX decorators (setter, observe, save, ...) forked for even more",
+  "repository": "nexalogy/mobx-decorators",
   "author": "farwayer <farwayer@gmail.com>",
   "license": "WTFPL",
   "keywords": [
