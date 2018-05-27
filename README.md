@@ -3,7 +3,7 @@
  This is a forked repo to experiment with adding a few more decorators to the totally amazing work  [farwayer/mobx-decorators](https://github.com/farwayer/mobx-decorators) has already accomplished.
  
  I'm experimenting with adding
- * `@reaction(tracking:function)` which would be decorator version of reaction() in mobx. i like the class state model. i like grouping actions together, it would be nice to have reactions as methods. Maybe because they are not so decoupled. But most importantly, they can be hard to see in the code, especially if you are modifying someone else's code.i would say that the default behaviour would be that the reactions are started and stopped when the object is constructed and then removed. i can also see the use of an `@init` and a `@dispose`
+ * `@reaction(()=>data,options?)` which would be decorator version of reaction() in mobx. the instance method would be executed and passed the data. i like the single file for classes with observables, i like that i can have a section with all my actions, i would like to do the same with reactions. it would be nice to have reactions as methods. Maybe because they are not so decoupled. But most importantly, they can be hard to see in the code, especially if you are modifying someone else's code.i would say that the default behaviour would be that the reactions are started and stopped when the object is constructed and then removed. i can also see the use of an `@init` and a `@dispose`
  * `@session` which is a trivial alteration of @save using sessionStorage. 
  * `@init` to mark a method as one that when executed initializes reactions immediately after
  * `@dispose` to mark a method where reactions and autoruns should be disposed
