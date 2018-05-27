@@ -3,11 +3,11 @@
  This is a forked repo to experiment with adding a few more decorators to the totally amazing work  [farwayer/mobx-decorators](https://github.com/farwayer/mobx-decorators) has already accomplished.
  
  I'm experimenting with adding
- * `@reaction(tracking:function)` which would be decorator version of reaction() in mobx. i like the class state model. i like grouping actions together, it would be nice to have reactions as methods. Maybe because they are not so decoupled. But most importantly, they can be hard to see in the code, especially if you are modifying someone else's code
+ * `@reaction(tracking:function)` which would be decorator version of reaction() in mobx. i like the class state model. i like grouping actions together, it would be nice to have reactions as methods. Maybe because they are not so decoupled. But most importantly, they can be hard to see in the code, especially if you are modifying someone else's code.i would say that the default behaviour would be that the reactions are started and stopped when the object is constructed and then removed. i can also see the use of an `@init` and a `@dispose`
  * `@session` which is a trivial alteration of @save using sessionStorage. 
  * `@init` to mark a method as one that when executed initializes reactions immediately after
  * `@dispose` to mark a method where reactions and autoruns should be disposed
- * `@save` _experimental modifications_ i would like a property marked by save to be able to have a default value that could be set directly in the class declaration,
+ * `@save` _experimental modifications_ i would like a property marked by save to be able to have a default value that could be set directly in the class declaration. at first i thought it would be interesting to also make the saving and loading triggered by an @init, but upon reflection it's pretty much irelevant, since any initializing action would usually involve setting a state that would override the storage -- a more up to date version of a state value. but a default value would be useful
 
 # Original ReadMe
 
